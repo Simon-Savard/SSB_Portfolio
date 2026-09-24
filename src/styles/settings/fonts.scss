@@ -3,11 +3,16 @@
    ========================================================================== */
 /// Font family
 :root {
-    --font-primary: 'Montserrat', sans-serif;
-    --font-secondary: 'Oswald', sans-serif;
+    --font-primary: 'Lexend', sans-serif;
+    --font-secondary: 'Montserrat', sans-serif;
 
-    --font-size-content: #{typo(16px, 18px)};
+    --font-size-content: #{typo(18px, 22px)};
 
     /// Grosseur des textes
-    --font-size-h1: #{typo(66px, 100px)};
+    --font-size-h1: #{typo(40px, 60px)};
+    --font-size-h2: #{typo(26px, 38px)};
+    --font-size-h3: #{typo(22px, 28px)};
+    --font-size-p: #{typo(18px, 22px)};
+    --font-size-btn: #{typo(18px)};
+    --font-size-tags: #{typo(10px, 12px)};
 }

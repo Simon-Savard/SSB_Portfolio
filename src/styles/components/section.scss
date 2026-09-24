@@ -1,7 +1,13 @@
 /* ==========================================================================
    section / 
    ========================================================================== */
+.primary{
+    background-color: var(--color-bg-primary);
+}
 
+.secondary{
+    background-color: var(--color-bg-secondary);
+}
 /*.section {
     position: relative;
     // outline: pink solid 1px;

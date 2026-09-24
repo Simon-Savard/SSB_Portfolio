@@ -1,0 +1,32 @@
+header{
+    background-color: var(--color-bg-primary);
+    color: var(--color-white);
+    height: 100px;
+    .wrapper{
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+         
+        .logo{
+            font-size: typo(32px);
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    li{
+        list-style-type: none;
+
+        a{
+            font-size: typo(18px);
+        }
+    }
+}
