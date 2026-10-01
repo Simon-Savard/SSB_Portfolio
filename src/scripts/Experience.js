@@ -5,8 +5,23 @@ export default class Experience {
   constructor() {
     this.sizes = {
       width: window.innerWidth,
-      height: window.innerHeight,
+      height: 800,
     };
+
+    /*this.settings = {
+      brushSize: 25.0,
+      brushStrength: 0.5,
+      distortionAmount: 2.5,
+      fluidDecay:0.98,
+      trailLength: 0.8,
+      stopDecay:0.85,
+      color1: "#ff0000",
+      color2: "#00ff00",
+      color3: "#0000ff",
+      color4: "#000000",
+      colorIntensity: 1.0,
+      softness: 1.0,
+    }*/
 
     this.canvas = document.querySelector(".webgl");
 
@@ -27,13 +42,7 @@ export default class Experience {
   }
 
   createCamera() {
-    this.camera = new THREE.PerspectiveCamera(
-      75,
-      this.sizes.width / this.sizes.height,
-    );
-    this.camera.position.z = -100;
-    this.camera.position.x = -20;
-    this.camera.position.y = -1;
+    this.camera= new THREE.OrthographicCamera(-1, 1, 1, -1, 0 ,1);
     this.scene.add(this.camera);
 
     this.controls = new OrbitControls(this.camera, this.canvas);
@@ -50,21 +59,19 @@ export default class Experience {
   }
 
   createObjects() {
-    const geometry = new THREE.BoxGeometry(20, 20, 20);
+    const geometry = new THREE.PlaneGeometry(20, 20);
 
     const material = new THREE.MeshMatcapMaterial({
       color: "#ff0000",
     });
 
-    this.cube = new THREE.Mesh(geometry, material);
+    this.plane = new THREE.Mesh(geometry, material);
 
-    this.scene.add(this.cube);
+    this.scene.add(this.plane);
   }
 
   animate() {
     const elapsedTime = this.clock.getElapsedTime();
-    this.cube.rotation.x = Math.sin(elapsedTime);
-    this.cube.rotation.y = Math.cos(elapsedTime);
 
     this.controls.update();
 
@@ -74,7 +81,7 @@ export default class Experience {
 
   resize() {
     this.sizes.width = window.innerWidth;
-    this.sizes.height = window.innerHeight;
+    //this.sizes.height = window.innerHeight;
 
     this.camera.aspect = this.sizes.width / this.sizes.height;
     this.camera.updateProjectionMatrix();

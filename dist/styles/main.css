@@ -411,6 +411,11 @@ h1 {
   font-weight: 900;
   font-family: var(--font-secondary);
   text-transform: uppercase;
+  margin: 0;
+}
+
+.nom {
+  font-size: clamp(1.88rem, 2.92vw + 1rem, 3.63rem);
 }
 
 h2 {
@@ -418,24 +423,34 @@ h2 {
   font-family: var(--font-secondary);
   font-weight: 600;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: clamp(1.63rem, 0.63vw + 1.44rem, 2rem);
+  color: var(--color-accent);
 }
 
 h3 {
   font-size: var(--font-size-h3);
   font-family: var(--font-primary);
   font-weight: 800;
+  margin: 0;
+  line-height: 100%;
 }
 
 p {
   font-family: var(--font-primary);
   font-size: var(--font-size-p);
   font-weight: 500;
+  margin: 0;
 }
 
 .tag {
   font-family: var(--font-primary);
   font-size: var(--font-size-tags);
   font-weight: 500;
+  margin: 0;
 }
 
 .btn {
@@ -443,6 +458,11 @@ p {
   font-size: var(--font-size-btn);
   font-weight: 600;
   text-transform: uppercase;
+  margin: 0;
+}
+
+strong {
+  color: var(--color-accent);
 }
 
 /* ==========================================================================
@@ -452,9 +472,12 @@ p {
 a {
   color: inherit;
   text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 a:hover {
   color: var(--color-accent);
+  transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 /* ==========================================================================
@@ -512,6 +535,14 @@ a:hover {
 /* ==========================================================================
    section / 
    ========================================================================== */
+.hero {
+  position: relative;
+  width: 100%;
+}
+.hero .wrapper {
+  height: 800px;
+}
+
 .primary {
   background-color: var(--color-bg-primary);
 }
@@ -618,5 +649,62 @@ header .wrapper .logo {
 }
 .menu ul li a {
   font-size: 1.13rem;
+}
+
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+.btn {
+  padding: 20px 50px;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border: 3px solid var(--color-accent);
+  border-radius: 50vh;
+}
+.btn:hover {
+  background-color: transparent;
+}
+
+.hero_apropos {
+  position: relative;
+}
+.hero_apropos img {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  z-index: 1;
+  height: 100%;
+}
+.hero_apropos .wrapper {
+  display: flex;
+  align-items: center;
+}
+.hero_apropos .wrapper .hero_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  max-width: 60vw;
+}
+.hero_apropos .wrapper .hero_content .info_simon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.hero_apropos .wrapper .hero_content .info_simon h3 {
+  max-width: 50vw;
+}
+.hero_apropos .wrapper .hero_content p {
+  max-width: 40vw;
 }
 /*# sourceMappingURL=main.css.map */

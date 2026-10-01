@@ -1,0 +1,11 @@
+.btn{
+    padding: 20px 50px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border: 3px solid var(--color-accent);
+    border-radius: 50vh;
+    &:hover{
+        background-color: transparent;
+
+    }
+}

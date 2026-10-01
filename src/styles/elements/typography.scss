@@ -8,6 +8,11 @@ h1{
     font-weight: 900;
     font-family: var(--font-secondary);
     text-transform: uppercase;
+    margin: 0;
+}
+
+.nom{
+    font-size: typo(30px, 58px);
 }
 
 h2 {
@@ -15,24 +20,34 @@ h2 {
     font-family: var(--font-secondary);
     font-weight: 600;
     text-transform: uppercase;
+    margin: 0;
+}
+
+.subtitle{
+    font-size: typo(26px, 32px);
+    color: var(--color-accent);
 }
 
 h3 {
     font-size: var(--font-size-h3);
     font-family: var(--font-primary);
     font-weight: 800;
+    margin: 0;
+    line-height: 100%;
 }
 
 p{
     font-family: var(--font-primary);
     font-size: var(--font-size-p);
     font-weight: 500;
+    margin: 0;
 }
 
 .tag{
     font-family: var(--font-primary);
     font-size: var(--font-size-tags);
     font-weight: 500;
+    margin: 0;
 }
 
 .btn{
@@ -40,4 +55,9 @@ p{
     font-size: var(--font-size-btn);
     font-weight: 600;
     text-transform: uppercase;
+    margin: 0;
+}
+
+strong{
+    color: var(--color-accent);
 }

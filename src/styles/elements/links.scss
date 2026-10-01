@@ -6,8 +6,11 @@
 a {
     color: inherit;
     text-decoration: none;
-
+    text-transform: uppercase;
+    transition: 0.5s $ease-out-expo;
+    
     &:hover {
         color: var(--color-accent);
+        transition: 0.5s $ease-out-expo;
     }
 }
