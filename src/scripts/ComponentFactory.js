@@ -1,5 +1,9 @@
 import TextAnim from './components/TextAnim.js';
 import Scroller from './components/Scroller.js';
+import Header from './components/Header.js';
+import Youtube from './components/Youtube.js';
+import Scrolly from './components/Scrolly.js';
+import Carousel from './components/Carousel.js';
 
 export default class ComponentFactory {
   constructor() {
@@ -7,6 +11,10 @@ export default class ComponentFactory {
     this.componentList = {
       TextAnim,
       Scroller,
+      Header,
+      Youtube,
+      Scrolly,
+      Carousel,
     };
     this.init();
   }
