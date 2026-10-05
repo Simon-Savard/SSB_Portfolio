@@ -398,7 +398,7 @@ img {
 body {
   font-family: var(--font-primary);
   font-size: var(--font-size-content);
-  color: var(--color-bg-primary);
+  color: var(--color-white);
   line-height: 1.6;
 }
 
@@ -425,6 +425,9 @@ h2 {
   text-transform: uppercase;
   margin: 0;
 }
+h2:not(.subtitle) {
+  padding-bottom: 30px;
+}
 
 .subtitle {
   font-size: clamp(1.63rem, 0.63vw + 1.44rem, 2rem);
@@ -442,7 +445,7 @@ h3 {
 p {
   font-family: var(--font-primary);
   font-size: var(--font-size-p);
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -535,6 +538,10 @@ a:hover {
 /* ==========================================================================
    section / 
    ========================================================================== */
+section:not(.hero) {
+  padding: 100px 0;
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -706,5 +713,41 @@ header .wrapper .logo {
 }
 .hero_apropos .wrapper .hero_content p {
   max-width: 40vw;
+}
+
+.caracteristiques {
+  background-color: var(--color-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  border-radius: 24px;
+}
+.caracteristiques .vertical {
+  border-left: 2px solid var(--color-white);
+  height: 230px;
+}
+.caracteristiques h3 {
+  padding-bottom: 30px;
+}
+.caracteristiques ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.logi-lang {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+.logi-lang .logi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.logi-lang .logi img {
+  padding: 20px;
 }
 /*# sourceMappingURL=main.css.map */

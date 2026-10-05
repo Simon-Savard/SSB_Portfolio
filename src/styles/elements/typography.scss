@@ -21,6 +21,11 @@ h2 {
     font-weight: 600;
     text-transform: uppercase;
     margin: 0;
+    
+    &:not(.subtitle){
+        padding-bottom: 30px;
+
+    }
 }
 
 .subtitle{
@@ -39,7 +44,7 @@ h3 {
 p{
     font-family: var(--font-primary);
     font-size: var(--font-size-p);
-    font-weight: 500;
+    font-weight: 400;
     margin: 0;
 }
 
