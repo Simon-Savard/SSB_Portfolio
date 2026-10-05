@@ -34,7 +34,7 @@
   --font-size-h3: clamp(1.38rem, 0.63vw + 1.19rem, 1.75rem);
   --font-size-p: clamp(1.13rem, 0.42vw + 1rem, 1.38rem);
   --font-size-btn: 1.13rem;
-  --font-size-tags: clamp(0.63rem, 0.21vw + 0.56rem, 0.75rem);
+  --font-size-tags: clamp(0.75rem, 0.42vw + 0.63rem, 1rem);
 }
 
 /* ==========================================================================
@@ -454,6 +454,10 @@ p {
   font-size: var(--font-size-tags);
   font-weight: 500;
   margin: 0;
+  background-color: var(--color-accent);
+  padding: 8px 16px;
+  border-radius: 50vh;
+  display: inline-block;
 }
 
 .btn {
@@ -830,5 +834,61 @@ header .wrapper .logo {
 .footer .wrapper .reseaux ul li:hover {
   background-color: transparent;
   transition: 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.best_card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 24px;
+  overflow: hidden;
+}
+.best_card .card_media {
+  position: relative;
+}
+.best_card .card_media::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to bottom, transparent, #000000);
+  z-index: 1;
+}
+.best_card .card_content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 50px;
+  transform: translateY(125px);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.best_card .card_content .info_projet {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 80%;
+}
+.best_card .card_content .info_projet ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 16px;
+}
+.best_card:hover .card_content {
+  transform: translateY(-5px);
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.titre-projet {
+  padding: 0 !important;
 }
 /*# sourceMappingURL=main.css.map */
