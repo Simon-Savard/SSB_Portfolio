@@ -59,7 +59,18 @@ p{
     display: inline-block;
 }
 
-.btn{
+.tag_secondary{
+    font-family: var(--font-primary);
+    font-size: var(--font-size-tags-secondary);
+    font-weight: 500;
+    margin: 0;
+    background-color: var(--color-accent);
+    padding: 5px 10px;
+    border-radius: 50vh;
+    display: inline-block;
+}
+
+.btn, .btn_secondary{
     font-family: var(--font-primary);
     font-size: var(--font-size-btn);
     font-weight: 600;
@@ -67,6 +78,8 @@ p{
     margin: 0;
     display: inline-block;
 }
+
+
 
 strong{
     color: var(--color-accent);
