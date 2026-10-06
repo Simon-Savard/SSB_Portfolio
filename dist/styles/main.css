@@ -869,6 +869,9 @@ header .wrapper .logo {
 .best_card .card_media {
   position: relative;
 }
+.best_card .card_media .video-cover {
+  width: 100%;
+}
 .best_card .card_media::after {
   content: "";
   width: 100%;

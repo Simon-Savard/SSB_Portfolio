@@ -6,6 +6,9 @@
     overflow: hidden;
     .card_media{
         position: relative;
+        .video-cover{
+            width: 100%;
+        }
         &::after{
             content: "";
             width: 100%;
