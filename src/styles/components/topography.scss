@@ -1,6 +1,18 @@
-.topography-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+// Fond animé (voir scripts/components/Topography.js)
+.hero_webgl{
+    isolation: isolate; // le z-index négatif reste à l’intérieur du hero
+}
+
+.topography{
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    pointer-events: none;
+
+    canvas{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
 }
