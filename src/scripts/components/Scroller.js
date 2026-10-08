@@ -5,7 +5,6 @@ import { ScrollSmoother } from 'gsap/ScrollSmoother.js';
 export default class Scroller {
   constructor(element) {
     gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
-    console.log('DNDKNDS');
     this.options = {
       hasSkew: false,
       hasPinItems: false,
@@ -78,6 +77,7 @@ export default class Scroller {
     const panels = sectionHoriz.querySelectorAll('.js-panel');
     const nbPanels = panels.length - 1;
     const buffer = 200;
+    console.log(nbPanels);
 
     gsap.to(panels, {
       xPercent: -100 * nbPanels,

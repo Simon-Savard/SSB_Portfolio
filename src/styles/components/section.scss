@@ -25,14 +25,18 @@ section:not(.hero){
 .section_gsap {
   display: flex;
   overflow: hidden;
+  
   .section_content {
     width: 100%;
-    height: 100vh;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    gap: 30px;
     flex-shrink: 0;
   }
 }
+
+
 

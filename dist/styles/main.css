@@ -400,6 +400,7 @@ body {
   font-family: var(--font-primary);
   font-size: var(--font-size-content);
   color: var(--color-white);
+  background-color: var(--color-bg-primary);
   line-height: 1.6;
 }
 
@@ -581,11 +582,12 @@ section:not(.hero) {
 }
 .section_gsap .section_content {
   width: 100%;
-  height: 100vh;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  gap: 30px;
   flex-shrink: 0;
 }
 
@@ -999,8 +1001,9 @@ header .wrapper .logo {
 
 .info_etape {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
+  gap: 48px;
 }
 .info_etape p {
   max-width: 50%;
@@ -1008,5 +1011,28 @@ header .wrapper .logo {
 .info_etape img {
   width: 588px;
   aspect-ratio: 16/9;
+}
+
+.flex_etapes {
+  display: flex;
+  justify-content: space-around;
+}
+
+.defis .wrapper {
+  background-color: var(--color-primary);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 50px;
+}
+.defis .wrapper .info_defi h3 {
+  padding-bottom: 10px;
+}
+
+.video_finale video {
+  width: 100%;
+  padding-bottom: 30px;
 }
 /*# sourceMappingURL=main.css.map */
