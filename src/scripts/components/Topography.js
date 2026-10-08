@@ -27,6 +27,8 @@ const DEFAULTS = {
   mouseRadius: 0.5,
   mouseStrength: 1.5,
   lightMode: false,
+  // Si true, une seule image fixe est affichée quand l'OS demande moins d'animations
+  respectReducedMotion: false,
 };
 
 const CTRL_INDICES = [
@@ -192,9 +194,9 @@ export default class Topography {
     this.raf = 0;
     this.isVisible = true;
     this.isPageVisible = !document.hidden;
-    this.reducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
+    this.reducedMotion =
+      this.options.respectReducedMotion &&
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     this.currentMouse = [0.5, 0.5];
     this.targetMouse = [0.5, 0.5];

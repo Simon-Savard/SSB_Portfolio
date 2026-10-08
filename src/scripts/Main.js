@@ -1,4 +1,5 @@
 import ComponentFactory from "./ComponentFactory.js";
+import SplashCursor from "./components/SplashCursor.js";
 import Icons from "./utils/Icons.js";
 
 class Main {
@@ -10,6 +11,7 @@ class Main {
     document.documentElement.classList.add("has-js");
 
     new ComponentFactory();
+    new SplashCursor();
 
     Icons.load();
 
