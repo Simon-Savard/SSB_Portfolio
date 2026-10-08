@@ -1,0 +1,39 @@
+.info_projet{
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+
+        video{
+            width: 100%;
+            border-radius: 24px;
+        }
+
+        .information{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 48px;
+            .contexte{
+                h3{
+                    padding-bottom: 20px;
+                }
+                max-width: 50%;
+            }
+            
+            .credits{
+                h3{
+                    padding-bottom: 20px;
+                }
+                ul{
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                }
+                
+            }
+        }
+
+    }
+}
