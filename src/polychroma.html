@@ -1,57 +1,109 @@
-{% include '_partials/_header.html' %}
+<div id="smooth-wrapper" data-component="Scroller">
+  <div id="smooth-content">
+    {% include '_partials/_header.html' %}
 
-<section class="hero hero_projet">
-    <div class="hero_media">
-      <video src="assets/video/polychroma.mp4" autoplay loop></video>
-
-    </div>
-    <div class="wrapper">
-        <div class="hero_content">
-            <h1>Création d’une expérience intéractive à l’aide d’une Kinect</h1>
+    <section class="hero hero_projet">
+        <div class="hero_media">
+          <video src="assets/video/polychroma.mp4" autoplay loop></video>
+    
+        </div>
+        <div class="wrapper">
+            <div class="hero_content">
+                <h1>Création d’une expérience intéractive à l’aide d’une Kinect</h1>
+                <ul>
+                  <li>
+                    <p class="tag">2026</p>
+                  </li>
+                  <li>
+                    <p class="tag">Médias Interactifs</p>
+                  </li>
+                  <li>
+                    <p class="tag">TouchDesigner</p>
+                  </li>
+                  <li>
+                    <p class="tag">Kinect</p>
+                  </li>
+                  <li>
+                    <p class="tag">Python</p>
+                  </li>
+                  <li>
+                    <p class="tag">Scolaire</p>
+                  </li>
+                </ul>
+            </div>
+    
+        </div>
+    </section>
+    
+    <section class="info_projet primary">
+      <div class="wrapper">
+        <h2>Sur le projet</h2>
+        <video src="assets/video/pc_info.mp4" loop controls></video>
+        <div class="information">
+          <div class="contexte">
+            <h3>Contexte</h3>
+            <p>Polychroma est un projet scolaire dans lequel il fallait concevoir <strong>une expérience intéractive</strong> à l’aide d’une Kinect V2. 
+               Ce projet allait ensuite être utilisé sur une murale pour les étudiants passant.</p>
+          </div>
+          <div class="credits">
+            <h3>Crédits</h3>
             <ul>
-              <li>
-                <p class="tag">2026</p>
-              </li>
-              <li>
-                <p class="tag">Médias Interactifs</p>
-              </li>
-              <li>
-                <p class="tag">TouchDesigner</p>
-              </li>
-              <li>
-                <p class="tag">Kinect</p>
-              </li>
-              <li>
-                <p class="tag">Python</p>
-              </li>
-              <li>
-                <p class="tag">Scolaire</p>
-              </li>
+              <li><p>Visuels et interactions: Simon Savard-Blondel</p></li>
+              <li><p>Musique: freetouse.com</p></li>
+              <li><p>Sons:soundsnap.com</p></li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="etapes section_gsap js-horiz secondary">
+      <div class="wrapper">
+        <h2>Les étapes de conception</h2>
+        <div class="section_content js-panel etape">
+          <div class="titre_etape">
+            <p>01/05 - </p>
+            <h3>Idéation et inspiration</h3>
+          </div>
+          <div class="info_etape">
+            <p>Je voulais faire une expérience où l’utilisateur intéragit avec des couleurs pour “peindre” l’écran, 
+               mais sans recréer le logiciel “MS Paint”. Je me suis donc inspiré du jeu mobile “Fruit Ninja” que je 
+               trouvais être un parfait mix d’intéraction utilisateur et peinturage d’écran original. 
+            </p>
+            <img src="assets/images/pc_inspiration_fn.jpg" alt="Inspiration Fruit Ninja">
+          </div>
         </div>
 
-    </div>
-</section>
+        <div class="section_content js-panel etape">
+          <div class="titre_etape">
+            <p>01/05 - </p>
+            <h3>Idéation et inspiration</h3>
+          </div>
+          <div class="info_etape">
+            <p>Je voulais faire une expérience où l’utilisateur intéragit avec des couleurs pour “peindre” l’écran, 
+               mais sans recréer le logiciel “MS Paint”. Je me suis donc inspiré du jeu mobile “Fruit Ninja” que je 
+               trouvais être un parfait mix d’intéraction utilisateur et peinturage d’écran original. 
+            </p>
+            <img src="assets/images/pc_inspiration_fn.jpg" alt="Inspiration Fruit Ninja">
+          </div>
+        </div>
+        
+        <div class="section_content js-panel etape">
+          <div class="titre_etape">
+            <p>01/05 - </p>
+            <h3>Idéation et inspiration</h3>
+          </div>
+          <div class="info_etape">
+            <p>Je voulais faire une expérience où l’utilisateur intéragit avec des couleurs pour “peindre” l’écran, 
+               mais sans recréer le logiciel “MS Paint”. Je me suis donc inspiré du jeu mobile “Fruit Ninja” que je 
+               trouvais être un parfait mix d’intéraction utilisateur et peinturage d’écran original. 
+            </p>
+            <img src="assets/images/pc_inspiration_fn.jpg" alt="Inspiration Fruit Ninja">
+          </div>
+        </div>
 
-<section class="info_projet primary">
-  <div class="wrapper">
-    <h2>Sur le projet</h2>
-    <video src="assets/video/pc_info.mp4" loop controls></video>
-    <div class="information">
-      <div class="contexte">
-        <h3>Contexte</h3>
-        <p>Polychroma est un projet scolaire dans lequel il fallait concevoir <strong>une expérience intéractive</strong> à l’aide d’une Kinect V2. 
-           Ce projet allait ensuite être utilisé sur une murale pour les étudiants passant.</p>
       </div>
-      <div class="credits">
-        <h3>Crédits</h3>
-        <ul>
-          <li><p>Visuels et interactions: Simon Savard-Blondel</p></li>
-          <li><p>Musique: freetouse.com</p></li>
-          <li><p>Sons:soundsnap.com</p></li>
-        </ul>
-      </div>
-    </div>
+    </section>
+    {% include '_partials/_footer.html' %}
   </div>
-</section>
-{% include '_partials/_footer.html' %}
+</div>

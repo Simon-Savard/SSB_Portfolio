@@ -37,3 +37,24 @@
 
     }
 }
+
+.titre_etape{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info_etape{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    p{
+        max-width: 50%;
+    }
+
+    img{
+        width: 588px;
+        aspect-ratio: 16/9;
+    }
+}

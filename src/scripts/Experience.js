@@ -8,21 +8,6 @@ export default class Experience {
       height: 800,
     };
 
-    /*this.settings = {
-      brushSize: 25.0,
-      brushStrength: 0.5,
-      distortionAmount: 2.5,
-      fluidDecay:0.98,
-      trailLength: 0.8,
-      stopDecay:0.85,
-      color1: "#ff0000",
-      color2: "#00ff00",
-      color3: "#0000ff",
-      color4: "#000000",
-      colorIntensity: 1.0,
-      softness: 1.0,
-    }*/
-
     this.canvas = document.querySelector(".webgl");
 
     this.scene = new THREE.Scene();
