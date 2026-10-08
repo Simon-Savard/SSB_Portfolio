@@ -1011,6 +1011,7 @@ header .wrapper .logo {
 .info_etape img {
   width: 588px;
   aspect-ratio: 16/9;
+  border-radius: 24px;
 }
 
 .flex_etapes {
@@ -1034,5 +1035,13 @@ header .wrapper .logo {
 .video_finale video {
   width: 100%;
   padding-bottom: 30px;
+  border-radius: 24px;
+}
+
+.topography-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
